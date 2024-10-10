@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Yoga Pose Detection</title>
+  <style>
+    /* Services Section */
+    #services{
+      background-image: url(/image/details.jpg);
+      background-size: cover;
+      background-position: top center;
+      position: relative;
+      z-index: 1;
+    }
+
+    #services .services {
+      flex-direction: column;
+      text-align: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    #services .service-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    #services .service-item {
+      flex-basis: 80%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+      border-radius: 10px;
+      background-size: cover;
+      margin: 10px 5%;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    #services .service-item::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(60deg, #ffffff 0%, #ffffff 100%);
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    #services .service-bottom .icon {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 20px;
+      background: transparent;
+
+    }
+
+    #services .service-item h2 {
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    #services .service-item h3 {
+      font-size: 1.5rem;
+      color: rgb(0, 0, 0);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    #services .service-item p {
+      color: rgb(0, 0, 0);
+      text-align: left;
+    }
+
+    /* End Services Section */
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #243326;
+      color: white;
+      font-size: 20px;
+      padding: 10px 10px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1>Yoga Pose Detection</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="login.html" data-after="Login">Logout</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="/image/W1.png" /></div>
+          <h2>Virabhadrasana I</h2>
+          <h3>(Warrior I Pose)</h3>
+          <p>"Strengthens the legs and upper arms, improves balance and core strength,stretches muscles."</p>
+          <p><a href="/Warrior1.html">Learn More</a></p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/W2.png" /></div>
+          <h2>Virabhadrasana II</h2>
+          <h3>(Warrior II Pose)</h3>
+          <p>"Strengthens your shoulders, arms, legs, ankles and back.
+            Improves focus, balance and stability."</p>
+          <p><a href="/Warrior2.html">Learn More</a></p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/butterfly.png" /></div>
+          <h2>Badhakonasana</h2>
+          <h3>(Butterfly Pose)</h3>
+          <p>“Reduces back pain.Lowers stress levels and helps with headaches.
+            Strengthens inner thigh area."</p>
+          <p><a href="/Butterfly.html">Learn More</a></p>  
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/padmasan.png" /></div>
+          <h2>Padmasana</h2>
+          <h3>(Lotus Pose)</h3>
+          <p>"Opens up the hips.Stretches the ankles and knees.
+            Calms the brain.Increases awareness."</p>
+            <p><a href="/Padmasana.html">Learn More</a></p>  
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/tree.png" /></div>
+          <h2>Vrikshasana</h2>
+          <h3>(Tree Pose)</h3>
+          <p>"Stretches your feet,stretch and strengthen
+            the ligaments and tendons in your feet."</p>
+          <p><a href="/Tree.html">Learn More</a></p>  
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/tri.jpg" /></div>
+          <h2>Trikonasana</h2>
+          <h3>(Triangle Pose)</h3>
+          <p>"Increases stability. Trikonasana activates your core muscles, which aids in balance and stability."</p>
+          <p><a href="/Triangle.html">Learn More</a></p>  
+
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/download.png" /></div>
+          <h2>Bhujangasana</h2>
+          <h3>(Cobra Pose)</h3>
+          <p>"Strengthens the spine.Stretches chest and lungs, shoulders, and abdomen.
+            Tones the buttocks."</p>
+            <p><a href="/cobra.html">Learn More</a></p>  
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/mountain.png" /></div>
+          <h2>Tadasana</h2>
+          <h3>(Mountain Pose)</h3>
+          <p>"Improve posture and coordination.Relieve sciatic pain.
+            Boost circulation"</p>
+            <p><a href="/Mountain.html">Learn More</a></p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="/image/t.jpg" width="80" height="50" /></div>
+          <h2>Reference Pose</h2>
+          <h3>(T Pose)</h3>
+          <p>"Boosts your self-esteem.Strengthens your legs and abs.
+            Keeps your digestive tract on track"</p>
+            <p><a href="/lunge.html">Learn More</a></p>
+        </div>
+        <img id="img" src="video_feed" style="width: 80%;display: none;">
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>Yoga Pose Detection</h1>
+      </div>
+      
+      <p>Copyright © 2022. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
